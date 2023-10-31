@@ -4,14 +4,16 @@
     <title>Sentiment Analysis</title>
 </head>
 <body>
-    <h1>Sentiment Analysis</h1>
+    <h1>Sentiment Analysis by Matthew, Felix, Bryan, Aditya, Prince</h1>
     <form method="post">
         <label for="sentence">Enter a sentence:</label>
         <input type="text" name="sentence" id="sentence" value="{{ sentence }}" required>
         <button type="submit">Analyze</button>
     </form>
     {% if overall_sentiment %}
-    <p><strong>Result:</strong>{{ sentiment_scores }} {{ overall_sentiment }}</p>
+    <p><strong>Result:</strong>
+        <p>score:{{ sentiment_scores }}  </p>
+        <p>label:{{ overall_sentiment }} </p>
     {% endif %}
 </body>
 </html>
